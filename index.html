@@ -6,6 +6,14 @@
 <meta property="og:title" content="Buen Puerto — Donde lo digital y lo presencial se encuentran">
 <meta property="og:url" content="https://buenpuerto.online">
 <title>Buen Puerto — Donde lo digital y lo presencial se encuentran</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buen Puerto">
+<meta property="og:description" content="Donde lo digital y lo presencial se encuentran.">
+<meta property="og:image" content="https://buenpuerto.online/og-buen-puerto.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://buenpuerto.online/og-buen-puerto.png">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjRjdGM0VBIi8+CjxwYXRoIGQ9Ik0yNyA1NVYzNEMyNyAxOCAzOCAxMCA1MiAxMGMxNSAwIDI2IDggMjYgMjR2MjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCQUE5RCIgc3Ryb2tlLXdpZHRoPSIxMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik00MCA1NVYzOGMwLTggNS0xMyAxMi0xMyA4IDAgMTMgNSAxMyAxM3YxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEYyRDNBIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxjaXJjbGUgY3g9Ijc4IiBjeT0iMjIiIHI9IjgiIGZpbGw9IiNEOUIyNUMiLz4KPHBhdGggZD0iTTE1IDYwYzE2IDkgMzEgOCA0NiAwIDEzLTcgMjUtNyAzOSAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxRjZCNkIiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik0xNSA3NWMxNiA5IDMxIDggNDYgMCAxMy03IDI1LTcgMzkgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTdEQ0MyIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTUgODljMTYgOCAzMSA4IDQ2IDAgMTMtNyAyNS03IDM5IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0UwN0E0RiIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -365,6 +373,38 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
   .idea-slide.is-active img{animation:none}
 }
 
+
+/* V13 — ajustes finales */
+.mobile-nav{display:none;position:fixed;z-index:100;inset:0;background:rgba(247,243,234,.98);backdrop-filter:blur(18px);align-items:center;justify-content:center;}
+.mobile-nav-links{display:flex;flex-direction:column;align-items:center;gap:25px;font-size:1.25rem;font-weight:600;}
+.mobile-close{position:absolute;top:18px;right:18px;width:48px;height:48px;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;}
+.mobile-close span{position:absolute;width:27px;height:2px;background:var(--navy);border-radius:2px;}
+.mobile-close span:first-child{transform:rotate(45deg)}
+.mobile-close span:last-child{transform:rotate(-45deg)}
+.project-preview.live-site-preview iframe{position:absolute;inset:0;width:200%;height:200%;transform:scale(.5);transform-origin:top left;z-index:2;background:#fff;}
+.project-preview.live-site-preview img{position:absolute;inset:0;z-index:1;}
+.project-preview.live-site-preview .live{z-index:4;}
+@media(max-width:640px){
+  .mobile-nav.is-open{display:flex;}
+  .recorrido-v8 .recorrido-left{padding:38px 22px 28px;}
+  .recorrido-v8 .recorrido-left h2{font-size:clamp(2.5rem,12vw,4rem);}
+  .recorrido-v8 .recorrido-left .recorrido-note{margin-top:16px;font-size:.9rem;line-height:1.5;max-width:100%;}
+  .recorrido-v8 .recorrido-item{min-height:0;padding:28px 22px 30px 40px;align-items:flex-start;}
+  .recorrido-v8 .item-index{font-size:.68rem;margin-bottom:8px;}
+  .recorrido-v8 .recorrido-item h3{font-size:clamp(1.55rem,7vw,2.25rem);margin-bottom:8px;line-height:1.02;}
+  .recorrido-v8 .recorrido-item p{font-size:.88rem;line-height:1.45;max-width:100%;}
+  .recorrido-v8 .item-line{width:3px;}
+}
+
+/* V14 — previews estables: no iframes, sin cartel Allow */
+.project-preview{background:#e8e2d7;position:relative;overflow:hidden}
+.project-preview .site-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border:0;z-index:1;transition:transform 1.2s cubic-bezier(.22,1,.36,1);background:#e8e2d7}
+.project-preview:hover .site-shot{transform:scale(1.025)}
+.project-preview .preview-fallback{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#e7dcc2,#f7f3ea);color:#0F2D3A;text-align:center}
+.project-preview .preview-fallback strong{font-size:1.35rem;letter-spacing:-.02em}.project-preview .preview-fallback span{font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;color:#1F6B6B}
+.project-preview .live{z-index:3}
+.project-preview::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(15,45,58,.02),rgba(15,45,58,.10));pointer-events:none}
+.project-preview .site-shot{z-index:1}
 </style>
 
 <link rel="preload" as="image" href="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2400&q=90">
@@ -383,16 +423,16 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
 <path d="M15 60c16 9 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#1F6B6B" stroke-width="8" stroke-linecap="round"/>
 <path d="M15 75c16 9 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#E7DCC2" stroke-width="8" stroke-linecap="round"/>
 <path d="M15 89c16 8 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#E07A4F" stroke-width="8" stroke-linecap="round"/></svg><span>BUEN<br>PUERTO<small>Donde lo digital y lo presencial se encuentran</small></span></a>
-<nav><a href="#idea">La idea</a><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a class="navcta" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank" rel="noopener">Hablemos →</a></nav>
+<nav><a href="#idea">La idea</a><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a class="navcta" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank" rel="noopener">Hablemos →</a></nav>
 <button class="menu" id="menu" aria-label="Abrir menú"><i></i><i></i><i></i></button></div></header>
-<div id="mobileNav" style="display:none;position:fixed;z-index:55;inset:0;background:var(--cream);align-items:center;justify-content:center;flex-direction:column;gap:25px;font-size:1.25rem"><a href="#idea">La idea</a><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank">Hablemos →</a></div>
+<div id="mobileNav" class="mobile-nav" aria-hidden="true"><button class="mobile-close" id="mobileClose" aria-label="Cerrar menú"><span></span><span></span></button><div class="mobile-nav-links"><a href="#idea">La idea</a><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank">Hablemos →</a></div></div>
 
 <main>
 <section class="hero" id="inicio"><div class="container hero-grid"><div>
 <div class="hero-kicker"><span class="dot"></span><span class="eyebrow">Buen Puerto · Experiencias digitales</span></div>
 <h1><span class="line"><span>Tu proyecto</span></span><span class="line"><span>tiene un lugar</span></span><span class="line"><span>en el <em class="nun">mundo.</em></span></span></h1>
 <p class="hero-sub">Construimos <em>lugares digitales</em> donde las personas llegan, exploran, encuentran lo que buscan y descubren todo lo que tu proyecto puede ofrecer.</p>
-<div class="hero-actions"><a class="btn" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank">Hablemos de tu proyecto →</a><a class="btn alt" href="#proyectos">Explorar proyectos</a></div></div>
+<div class="hero-actions"><a class="btn" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank">Hablemos de tu proyecto →</a><a class="btn alt" href="#proyectos">Explorar proyectos</a></div></div>
 <div class="hero-art"><div class="orb"></div><div class="wave"></div><div class="wave two"></div><div class="hero-logo"><svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
 <path d="M27 55V34C27 18 38 10 52 10c15 0 26 8 26 24v24" fill="none" stroke="#7BAA9D" stroke-width="11" stroke-linecap="round"/>
 <path d="M40 55V38c0-8 5-13 12-13 8 0 13 5 13 13v18" fill="none" stroke="#0F2D3A" stroke-width="9" stroke-linecap="round"/>
@@ -512,15 +552,15 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
 </section>
 
 
-<section class="projects" id="proyectos"><div class="container"><div class="projects-head"><div><span class="eyebrow">Proyectos reales</span><h2>Diferentes lugares.<br><em class="nun">Diferentes necesidades.</em></h2></div><p>Cuatro proyectos reales. Cuatro mundos distintos. La herramienta cambia; la intención es la misma: crear un lugar digital que haga crecer lo que ya existe.</p></div>
+<section class="projects" id="proyectos"><div class="container"><div class="projects-head"><div><span class="eyebrow">Proyectos reales</span><h2>Diferentes lugares.<br><em class="nun">Diferentes necesidades.</em></h2></div><p>Una selección de proyectos reales y mundos distintos. La herramienta cambia; la intención es la misma: crear un lugar digital que haga crecer lo que ya existe.</p></div>
 <div class="project-list">
-<article class="project"><a class="project-media project-preview" href="https://www.centroelprogreso.cl/" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://www.centroelprogreso.cl/" alt="Preview del hero de Centro El Progreso" loading="eager" decoding="async"><span class="live">Ver sitio ↗</span><span class="preview-fallback" hidden>Centro El Progreso</span></a><div class="project-info"><span class="tag">Turismo · Reservas</span><h3>Centro El Progreso</h3><p>Una experiencia digital para un proyecto turístico presencial, con reservas y comunicación directa.</p><a class="project-link" href="https://www.centroelprogreso.cl/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
+<article class="project"><a class="project-media project-preview live-site-preview" href="https://www.centroelprogreso.cl/" target="_blank" rel="noopener"><img class="site-shot" src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://www.centroelprogreso.cl/" alt="Preview del sitio Centro El Progreso" loading="eager" decoding="async"><div class="preview-fallback"><strong>Centro El Progreso</strong><span>Vista previa del sitio</span></div><span class="live">Ver sitio ↗</span></a><div class="project-info"><span class="tag">Turismo · Reservas</span><h3>Centro El Progreso</h3><p>Una experiencia digital para un proyecto turístico presencial, con reservas y comunicación directa.</p><a class="project-link" href="https://www.centroelprogreso.cl/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
 <article class="project"><a class="project-media project-preview nuevo-preview" href="https://nuevohuevo.com.ar/" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://nuevohuevo.com.ar/" alt="Preview del hero de Nuevo Huevo" loading="eager" decoding="async"><span class="live">Ver sitio ↗</span><span class="preview-fallback" hidden>Nuevo Huevo</span></a><div class="project-info"><span class="tag">Ecommerce · Agroecología</span><h3>Nuevo Huevo</h3><p>Una marca de producción real llevada a una experiencia de compra, distribución y comunidad digital.</p><a class="project-link" href="https://nuevohuevo.com.ar/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
-<article class="project"><a class="project-media project-preview nora-preview" href="https://www.noraescultura.com/" target="_blank" rel="noopener"><iframe src="https://www.noraescultura.com/" title="Preview en movimiento de Nora es Cultura" loading="eager" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe><span class="live">Ver sitio ↗</span><span class="preview-fallback" hidden>Nora es Cultura</span></a><div class="project-info"><span class="tag">Arte · Cultura</span><h3>Nora es Cultura</h3><p>Una identidad digital para una propuesta artística y cultural, pensada para presentar su obra y acercarla a nuevas personas.</p><a class="project-link" href="https://www.noraescultura.com/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
+<article class="project"><a class="project-media project-preview nora-preview" href="https://www.noraescultura.com/" target="_blank" rel="noopener"><img class="site-shot" src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://www.noraescultura.com/" alt="Preview del sitio Nora es Cultura" loading="eager" decoding="async"><div class="preview-fallback"><strong>Nora es Cultura</strong><span>Vista previa del sitio</span></div><span class="live">Ver sitio ↗</span></a><div class="project-info"><span class="tag">Arte · Cultura</span><h3>Nora es Cultura</h3><p>Una identidad digital para una propuesta artística y cultural, pensada para presentar su obra y acercarla a nuevas personas.</p><a class="project-link" href="https://www.noraescultura.com/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
 <article class="project"><a class="project-media project-preview" href="https://aureacocinaadaptada.site/" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1600/crop/900/noanimate/https://aureacocinaadaptada.site/" alt="Preview del hero de Áurea Cocina Adaptada" loading="eager" decoding="async"><span class="live">Ver sitio ↗</span></a><div class="project-info"><span class="tag">Producto · Formación</span><h3>Áurea Cocina Adaptada</h3><p>Un proyecto que une productos artesanales, formación online y atención directa.</p><a class="project-link" href="https://aureacocinaadaptada.site/" target="_blank" rel="noopener">Visitar proyecto →</a></div></article>
 </div></div></section>
 
-<section class="cta" id="contacto"><div class="container cta-inner"><div><span class="eyebrow" style="color:#ffe4a7">Tu próximo paso</span><h2>Hagamos que lo digital y lo presencial de tu proyecto <em>se encuentren.</em></h2><p>Contame qué estás construyendo, qué ya existe y hacia dónde querés expandirlo. A partir de ahí pensamos juntos cuál es el mejor lugar para hacerlo crecer.</p></div><a class="btn" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank">Hablemos por WhatsApp →</a></div></section>
+<section class="cta" id="contacto"><div class="container cta-inner"><div><span class="eyebrow" style="color:#ffe4a7">Tu próximo paso</span><h2>Hagamos que lo digital y lo presencial de tu proyecto <em>se encuentren.</em></h2><p>Contame qué estás construyendo, qué ya existe y hacia dónde querés expandirlo. A partir de ahí pensamos juntos cuál es el mejor lugar para hacerlo crecer.</p></div><a class="btn" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank">Hablemos por WhatsApp →</a></div></section>
 </main>
 
 <footer><div class="container"><div class="foot-grid"><div class="foot-brand"><a class="brand" href="#inicio"><svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
@@ -529,12 +569,21 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
 <circle cx="78" cy="22" r="8" fill="#D9B25C"/>
 <path d="M15 60c16 9 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#1F6B6B" stroke-width="8" stroke-linecap="round"/>
 <path d="M15 75c16 9 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#E7DCC2" stroke-width="8" stroke-linecap="round"/>
-<path d="M15 89c16 8 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#E07A4F" stroke-width="8" stroke-linecap="round"/></svg><span>BUEN<br>PUERTO<small>Donde lo digital y lo presencial se encuentran</small></span></a><p>Un lugar digital para que lo que ya construiste pueda encontrarse con más personas.</p></div><div><div class="foot-title">Explorar</div><div class="foot-links"><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div></div><div><div class="foot-title">Hablemos</div><div class="foot-links"><a href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank">WhatsApp</a><a href="mailto:hola@buenpuerto.online">hola@buenpuerto.online</a></div></div></div><div class="foot-bottom"><div>© 2026 Buen Puerto</div><div>Donde lo digital y lo presencial se encuentran.</div></div></div></footer>
+<path d="M15 89c16 8 31 8 46 0 13-7 25-7 39 0" fill="none" stroke="#E07A4F" stroke-width="8" stroke-linecap="round"/></svg><span>BUEN<br>PUERTO<small>Donde lo digital y lo presencial se encuentran</small></span></a><p>Un lugar digital para que lo que ya construiste pueda encontrarse con más personas.</p></div><div><div class="foot-title">Explorar</div><div class="foot-links"><a href="#recorrido">El recorrido</a><a href="#ecosistema">Qué hacemos</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div></div><div><div class="foot-title">Hablemos</div><div class="foot-links"><a href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank">WhatsApp</a><a href="mailto:hola@buenpuerto.online">hola@buenpuerto.online</a></div></div></div><div class="foot-bottom"><div>© 2026 Buen Puerto</div><div>Donde lo digital y lo presencial se encuentran.</div></div></div></footer>
 
-<a class="wa" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto." target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path fill="white" d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.55 0 .24 5.3.24 11.82c0 2.08.54 4.1 1.56 5.88L.15 23.85l6.3-1.62a11.82 11.82 0 0 0 5.63 1.43h.01c6.52 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.12-3.39-8.36Zm-8.44 18.2h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.74.96 1-3.64-.23-.37a9.8 9.8 0 1 1 8.35 4.63Zm5.39-7.35c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.63-.93-2.23-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.49 1.72.63.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.28-.2-.58-.35Z"/></svg></a>
+<a class="wa" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path fill="white" d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.55 0 .24 5.3.24 11.82c0 2.08.54 4.1 1.56 5.88L.15 23.85l6.3-1.62a11.82 11.82 0 0 0 5.63 1.43h.01c6.52 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.12-3.39-8.36Zm-8.44 18.2h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.74.96 1-3.64-.23-.37a9.8 9.8 0 1 1 8.35 4.63Zm5.39-7.35c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.63-.93-2.23-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.49 1.72.63.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.28-.2-.58-.35Z"/></svg></a>
 <script>
 const header=document.getElementById('header');addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});
-const menu=document.getElementById('menu'),mobile=document.getElementById('mobileNav');menu.addEventListener('click',()=>mobile.style.display=mobile.style.display==='flex'?'none':'flex');mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobile.style.display='none'));const stepIO=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('active',e.isIntersecting)),{threshold:.55});document.querySelectorAll('.step').forEach(e=>stepIO.observe(e));
+const menu=document.getElementById('menu'),mobile=document.getElementById('mobileNav'),mobileClose=document.getElementById('mobileClose');
+function openMobile(){mobile.classList.add('is-open');mobile.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeMobile(){mobile.classList.remove('is-open');mobile.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+menu.addEventListener('click',openMobile);mobileClose.addEventListener('click',closeMobile);mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobile));
+const stepIO=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('active',e.isIntersecting)),{threshold:.55});document.querySelectorAll('.step').forEach(e=>stepIO.observe(e));
+
+// Preview seguro: si el servicio de captura no responde, mostramos una tarjeta limpia en lugar de un bloque roto.
+document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
+  img.addEventListener('error',()=>{ img.style.display='none'; });
+});
 </script>
 
 <script>
@@ -547,6 +596,11 @@ const menu=document.getElementById('menu'),mobile=document.getElementById('mobil
   }, { root:null, threshold:0.52, rootMargin:'-8% 0px -8% 0px' });
   items.forEach(item => io.observe(item));
 })();
+
+// Preview seguro: si el servicio de captura no responde, mostramos una tarjeta limpia en lugar de un bloque roto.
+document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
+  img.addEventListener('error',()=>{ img.style.display='none'; });
+});
 </script>
 
 
@@ -566,6 +620,11 @@ const menu=document.getElementById('menu'),mobile=document.getElementById('mobil
     });
   });
 })();
+
+// Preview seguro: si el servicio de captura no responde, mostramos una tarjeta limpia en lugar de un bloque roto.
+document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
+  img.addEventListener('error',()=>{ img.style.display='none'; });
+});
 </script>
 
 <script>
@@ -609,6 +668,11 @@ const menu=document.getElementById('menu'),mobile=document.getElementById('mobil
   goTo(0);
   restart();
 })();
+
+// Preview seguro: si el servicio de captura no responde, mostramos una tarjeta limpia en lugar de un bloque roto.
+document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
+  img.addEventListener('error',()=>{ img.style.display='none'; });
+});
 </script>
 
 </body></html>
