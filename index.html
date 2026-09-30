@@ -438,18 +438,18 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
 .mobile-lang-option.active{background:var(--navy);color:#fff;border-color:var(--navy)}
 .mobile-instagram{display:inline-flex;align-items:center;gap:9px!important;font-size:.82rem!important;color:var(--teal)!important}
 .mobile-instagram svg{width:20px;height:20px}
-.project-categories{display:grid;gap:92px}
+.project-categories{display:grid;gap:52px}
 .project-category{position:relative}
-.category-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:30px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-.category-head .eyebrow{color:var(--teal)}
+.category-head{display:flex;justify-content:space-between;align-items:center;gap:40px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.category-head .eyebrow{color:var(--teal);font-size:clamp(1.2rem,2vw,1.8rem);line-height:1.05;letter-spacing:.10em;font-weight:800}
 .category-head p{max-width:540px;color:rgba(15,45,58,.58);font-size:.92rem;margin:0}
 .project-category .project-list{margin-top:0}
 .applications-category{padding-top:4px}
 .footer-instagram{display:inline-flex;align-items:center;gap:8px!important}
 .footer-instagram svg{width:17px;height:17px}
 .miestadia-preview .site-shot{object-position:top center}
-@media(max-width:900px){.category-head{display:block}.category-head p{margin-top:12px}.project-categories{gap:68px}}
-@media(max-width:640px){.instagram-link{display:none}.category-head{margin-bottom:24px}.category-head .eyebrow{font-size:.62rem}.category-head p{font-size:.86rem;line-height:1.5}.mobile-nav-links{gap:22px}}
+@media(max-width:900px){.category-head{display:block}.category-head p{margin-top:10px}.project-categories{gap:42px}}
+@media(max-width:640px){.instagram-link{display:none}.category-head{margin-bottom:20px}.category-head .eyebrow{font-size:1.12rem;letter-spacing:.08em}.category-head p{font-size:.86rem;line-height:1.5}.mobile-nav-links{gap:22px}}
 
 /* V28 — previews en vivo desde las webs + SEO/OG V21 preservados */
 .lang-switcher{position:relative;display:inline-flex;align-items:center}
@@ -524,7 +524,7 @@ footer{background:var(--navy);color:#fff;padding:70px 0 28px}.foot-grid{display:
 <main>
 <section class="hero" id="inicio"><div class="container hero-grid"><div>
 <div class="hero-kicker"><span class="dot"></span><span class="eyebrow" data-i18n="heroKicker">Buen Puerto · Experiencias digitales</span></div>
-<h1><span class="line"><span data-i18n="heroLine1">Tu proyecto</span></span><span class="line"><span data-i18n="heroLine2">tiene un lugar</span></span><span class="line"><span>en el <em class="nun" data-i18n="heroWorld">mundo.</em></span></span></h1>
+<h1><span class="line"><span data-i18n="heroLine1">Tu proyecto</span></span><span class="line"><span data-i18n="heroLine2">tiene un lugar</span></span><span class="line"><span data-i18n-html="heroWorld">en el <em class="nun">mundo.</em></span></span></h1>
 <p class="hero-sub" data-i18n-html="heroSub">Construimos <em>lugares digitales</em> donde las personas llegan, exploran, encuentran lo que buscan y descubren todo lo que tu proyecto puede ofrecer.</p>
 <div class="hero-actions"><a class="btn" href="https://wa.me/5491131923742?text=Hola%20Buen%20Puerto.%20Quiero%20contarles%20sobre%20mi%20proyecto.%20https%3A%2F%2Fbuenpuerto.online" target="_blank" data-i18n="heroTalk">Hablemos de tu proyecto →</a><a class="btn alt" href="#proyectos" data-i18n="heroExplore">Explorar proyectos</a></div></div>
 <div class="hero-art"><div class="orb"></div><div class="wave"></div><div class="wave two"></div><div class="hero-logo"><svg aria-hidden="true" class="logo-mark" viewbox="0 0 100 100">
@@ -794,7 +794,7 @@ document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
   const T = {
     es: {
       navIdea:'La idea',navWhat:'Qué hacemos',navProjects:'Proyectos',navNext:'Tu próximo paso',navTalk:'Hablemos →',languageLabel:'Idioma',
-      heroKicker:'Buen Puerto · Experiencias digitales',heroLine1:'Tu proyecto',heroLine2:'tiene un lugar',heroWorld:'mundo.',
+      heroKicker:'Buen Puerto · Experiencias digitales',heroLine1:'Tu proyecto',heroLine2:'tiene un lugar',heroWorld:'en el <em class="nun">mundo.</em>',
       heroSub:'Construimos <em>lugares digitales</em> donde las personas llegan, exploran, encuentran lo que buscan y descubren todo lo que tu proyecto puede ofrecer.',
       heroTalk:'Hablemos de tu proyecto →',heroExplore:'Explorar proyectos',heroNote:'Llegar · Explorar · Expandirse',
       ideaKicker:'La idea',ideaTitle:'Hay proyectos que merecen ser <em class="nun">encontrados.</em>',ideaText:'Un lugar, un producto, una obra, una experiencia, una comunidad. Todo eso ya existe. Nosotros construimos el espacio digital donde puede encontrarse con más personas.',ideaCap0:'Tu proyecto',ideaCap0Text:'Lo que ya existe en el mundo real.',
@@ -806,7 +806,7 @@ document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
     },
     pt: {
       navIdea:'A ideia',navWhat:'O que fazemos',navProjects:'Projetos',navNext:'Seu próximo passo',navTalk:'Vamos conversar →',languageLabel:'Idioma',
-      heroKicker:'Buen Puerto · Experiências digitais',heroLine1:'Seu projeto',heroLine2:'tem um lugar',heroWorld:'no mundo.',
+      heroKicker:'Buen Puerto · Experiências digitais',heroLine1:'Seu projeto',heroLine2:'tem um lugar',heroWorld:'no <em class="nun">mundo.</em>',
       heroSub:'Construímos <em>lugares digitais</em> onde as pessoas chegam, exploram, encontram o que procuram e descobrem tudo o que seu projeto pode oferecer.',
       heroTalk:'Vamos falar do seu projeto →',heroExplore:'Explorar projetos',heroNote:'Chegar · Explorar · Expandir',
       ideaKicker:'A ideia',ideaTitle:'Há projetos que merecem ser <em class="nun">encontrados.</em>',ideaText:'Um lugar, um produto, uma obra, uma experiência, uma comunidade. Tudo isso já existe. Nós construímos o espaço digital onde pode ser encontrado por mais pessoas.',ideaCap0:'Seu projeto',ideaCap0Text:'O que já existe no mundo real.',
@@ -818,7 +818,7 @@ document.querySelectorAll('.project-preview .site-shot').forEach(img=>{
     },
     en: {
       navIdea:'The idea',navWhat:'What we do',navProjects:'Projects',navNext:'Your next step',navTalk:'Let’s talk →',languageLabel:'Language',
-      heroKicker:'Buen Puerto · Digital experiences',heroLine1:'Your project',heroLine2:'has a place',heroWorld:'in the world.',
+      heroKicker:'Buen Puerto · Digital experiences',heroLine1:'Your project',heroLine2:'has a place',heroWorld:'in the <em class="nun">world.</em>',
       heroSub:'We build <em>digital places</em> where people arrive, explore, find what they need and discover everything your project has to offer.',
       heroTalk:'Let’s talk about your project →',heroExplore:'Explore projects',heroNote:'Arrive · Explore · Expand',
       ideaKicker:'The idea',ideaTitle:'Some projects deserve to be <em class="nun">found.</em>',ideaText:'A place, a product, a work, an experience, a community. All of that already exists. We build the digital space where it can be discovered by more people.',ideaCap0:'Your project',ideaCap0Text:'What already exists in the real world.',
